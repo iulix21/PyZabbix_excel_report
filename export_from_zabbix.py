@@ -1,4 +1,5 @@
 # first you need to install pyzabbix {command: pip install pyzabbix}
+# if you have difficulty contact iulian-boss@mail.ru
 
 from pyzabbix import ZabbixAPI
 from datetime import datetime
