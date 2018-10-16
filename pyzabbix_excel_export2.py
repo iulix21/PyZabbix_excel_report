@@ -85,8 +85,8 @@ def checkGroups(hostgroup):
 			groupids.append(groups[i]['groupid'])
 	return groupids
 #---------------------------------------------------------------------------------------------------------------------
-zapi = ZabbixAPI("http://46.228.248.22:2639/zabbix/api_jsonrpc.php")
-zapi.login("boisteanu.dinu", "BOdi@2018")
+zapi = ZabbixAPI("http://zabbix_ip/zabbix/api_jsonrpc.php")
+zapi.login("zabbix_user", "zabbix_password")
 print("Connected to Zabbix API Version %s" % zapi.api_version())
 time_till = time.mktime(datetime.now().timetuple())
 time_from = time_till - 60 * 60 * 2  # 2 hours
